@@ -228,8 +228,8 @@ COMMA    : ',';
 QMARK    : '?';
 
 BOOL
-    : 'butete' // true
-    | 'palaka' // false
+    : 'brue' // true
+    | 'balse' // false
     ;
 
 NUMBER
