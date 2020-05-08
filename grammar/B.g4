@@ -199,7 +199,7 @@ NULL     : 'bull';
 VAR      : 'bar';
 TRY      : 'bry';
 CATCH    : 'batch';
-FINALLY  : 'binally';
+FINALLY  : 'binallyy';
 
 AND      : '&&';
 OR       : '||';
