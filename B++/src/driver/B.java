@@ -190,9 +190,9 @@ public class B extends JFrame {
         variableDeclaration.setSize(250,50);
 
         variableDeclaration.addActionListener(e -> {
-            textArea.setText("There are no data types in the grammar B.\n" +
-                            "It is similar to the Python language\n\n" +
-                            "Syntax: *identifier* = ... \n\n EXAMPLE: \n a = 5 + 5; ");
+            textArea.setText("B++ programming is similar to Python\n" +
+                            
+                            " *identifier* = ... \n\n EXAMPLE: \n a = 5 + 5; ");
         });
 
         manualPanel.add(variableDeclaration);
@@ -203,9 +203,9 @@ public class B extends JFrame {
         inputOrOutput.addActionListener(e -> {
 
             textArea.setText("1. Input \n" +
-                            "Syntax: bar a = bnput();\n or \n a = bnput();\n\n" +
+                            "bar a = bnput();\n or \n a = bnput();\n\n" +
                             "2. Output \n" +
-                            "Syntax: brint(identifier or string);");
+                            "brint(identifier or string);");
         });
 
         manualPanel.add(inputOrOutput);
@@ -215,7 +215,7 @@ public class B extends JFrame {
         conditional.setSize(250, 50);
         conditional.addActionListener(e -> {
            textArea.setText("Conditional Statements: \n" +
-                   "Syntax: bf condition { \n *statements* \n } bf blse condition {\n *statements* \n} \n blse {*statements*}");
+                   "bf condition { \n *statements* \n } bf blse condition {\n *statements* \n} \n blse {*statements*}");
         });
 
         manualPanel.add(conditional);
@@ -226,11 +226,11 @@ public class B extends JFrame {
         loop.addActionListener(e -> {
             textArea.setText("Loops: \n\n" +
                              "1. For loop \n" +
-                             "Syntax: bor i = 0 bto { \n *insert statements * \n}\n " +
+                             " bor i = 0 bto { \n *insert statements * \n}\n " +
                              "2. Do While loop \n" +
-                             "Syntax: bdo { \n *insert statements * \n} bhile(condition)\n" +
+                             " bdo { \n *insert statements * \n} bhile(condition)\n" +
                              "3. While loop \n" +
-                             "Syntax: bhile condition { \n *insert statements * \n}\n");
+                             " bhile condition { \n *insert statements * \n}\n");
         });
 
         manualPanel.add(loop);
@@ -240,11 +240,8 @@ public class B extends JFrame {
         JButton keywords = new JButton("Keywords");
         keywords.setSize(250, 50);
         keywords.addActionListener(e -> {
-            textArea.setText(//"MAIN: \t 'bain'\n" +
-                             "PRINT:  'brint' \n" +
+            textArea.setText("PRINT:  'brint' \n" +
                              "INPUT:  'bnput' \n" +
-                            // "FUNC: \t 'bunc' \n" +
-                            // "CONST: \t 'bonst' \n" +
                              "IF: 'bf' \n " +
                              "ELSE: 'blse' \n " +
                              "FOR:  'bor' \n " +
