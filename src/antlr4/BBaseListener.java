@@ -1,4 +1,4 @@
-package antlr4;// Generated from C:/Users/user/Desktop/CMPILER v2/Java Implementation/grammar\B.g4 by ANTLR 4.7.2
+package antlr4;// Generated from C:/Users/user/Desktop/CMPILER v2/B++ - Copy (2)/grammar\B.g4 by ANTLR 4.7.2
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -231,6 +231,18 @@ public class BBaseListener implements BListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterMissingSemiColonAss(BParser.MissingSemiColonAssContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMissingSemiColonAss(BParser.MissingSemiColonAssContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterDoWhileStatement(BParser.DoWhileStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -238,6 +250,18 @@ public class BBaseListener implements BListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitDoWhileStatement(BParser.DoWhileStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMissingSemiColonLoop(BParser.MissingSemiColonLoopContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMissingSemiColonLoop(BParser.MissingSemiColonLoopContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

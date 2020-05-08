@@ -1,4 +1,4 @@
-package antlr4;// Generated from C:/Users/user/Desktop/CMPILER v2/Java Implementation/grammar\B.g4 by ANTLR 4.7.2
+package antlr4;// Generated from C:/Users/user/Desktop/CMPILER v2/B++ - Copy (2)/grammar\B.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -118,11 +118,23 @@ public interface BVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitMissingRBraceWhileLoop(BParser.MissingRBraceWhileLoopContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link BParser#missingSemiColonAss}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMissingSemiColonAss(BParser.MissingSemiColonAssContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link BParser#doWhileStatement}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitDoWhileStatement(BParser.DoWhileStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link BParser#missingSemiColonLoop}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMissingSemiColonLoop(BParser.MissingSemiColonLoopContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link BParser#missingLBraceDoWhileLoop}.
 	 * @param ctx the parse tree

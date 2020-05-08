@@ -19,6 +19,7 @@ statement
     | tryCatchNullStatement
     | tryCatchIndexOutOfBoundsStatement
     | tryCatchDivideByZeroStatement
+    | missingSemiColonAss
     ;
 
 assignment
@@ -88,10 +89,20 @@ missingRBraceWhileLoop
     : WHILE expression LBRACE block
     ;
 
+missingSemiColonAss
+    : assignment
+    | functionCall
+    ;
+
 doWhileStatement
     : DO LBRACE block RBRACE WHILE expression SCOLON
     | missingLBraceDoWhileLoop
     | missingRBraceDoWhileLoop
+    | missingSemiColonLoop
+    ;
+
+missingSemiColonLoop
+    :DO LBRACE block RBRACE WHILE expression
     ;
 
 missingLBraceDoWhileLoop

@@ -18,12 +18,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import org.fife.ui.autocomplete.AutoCompletion;
-import org.fife.ui.autocomplete.BasicCompletion;
-import org.fife.ui.autocomplete.CompletionProvider;
-import org.fife.ui.autocomplete.DefaultCompletionProvider;
-import org.fife.ui.rsyntaxtextarea.templates.CodeTemplate;
-import org.fife.ui.rsyntaxtextarea.templates.StaticCodeTemplate;
 import org.fife.ui.rtextarea.*;
 import org.fife.ui.rsyntaxtextarea.*;
 

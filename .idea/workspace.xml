@@ -19,8 +19,8 @@
     <property name="$PROJECT_DIR$/grammar/B.g4::/auto-gen" value="true" />
     <property name="$PROJECT_DIR$/grammar/B.g4::/gen-listener" value="true" />
     <property name="$PROJECT_DIR$/grammar/B.g4::/gen-visitor" value="true" />
-    <property name="$PROJECT_DIR$/grammar/B.g4::/output-dir" value="C:\Users\user\Desktop\CMPILER v2\Java Implementation\test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CMPILERMP-master/Java Implementation" />
+    <property name="$PROJECT_DIR$/grammar/B.g4::/output-dir" value="C:\Users\user\Desktop\CMPILER v2\B++ - Copy (2)\src\antlr4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/antlr4" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

@@ -42,13 +42,13 @@ public class ErrorVisitor extends BBaseVisitor {
 
     //error for loop
     @Override public Object visitMissingLBraceForLoop(BParser.MissingLBraceForLoopContext ctx) {
-        B.addErrors("Bor loop does not have an opening brace ({) at line " + ctx.getStart().getLine());
+        B.addErrors("Bor loop does not have an opening brace { at line " + ctx.getStart().getLine());
 
         return visitChildren(ctx);
     }
     
     @Override public Object visitMissingRBraceForLoop(BParser.MissingRBraceForLoopContext ctx) {
-        B.addErrors("Bor loop does not have a closing brace (}) at line " + ctx.getStart().getLine());
+        B.addErrors("Bor loop does not have a closing brace } at line " + ctx.getStart().getLine());
 
         return visitChildren(ctx);
     }
@@ -57,13 +57,13 @@ public class ErrorVisitor extends BBaseVisitor {
 
     //error for loop
     @Override public Object visitMissingLBraceWhileLoop(BParser.MissingLBraceWhileLoopContext ctx) {
-        B.addErrors("Bhile loop does not have an opening brace ({) at line " + ctx.getStart().getLine());
+        B.addErrors("Bhile loop does not have an opening brace { at line " + ctx.getStart().getLine());
 
         return visitChildren(ctx);
     }
     
     @Override public Object visitMissingRBraceWhileLoop(BParser.MissingRBraceWhileLoopContext ctx) {
-        B.addErrors("Bhile loop does not have a closing brace (}) at line " + ctx.getStart().getLine());
+        B.addErrors("Bhile loop does not have a closing brace } at line " + ctx.getStart().getLine());
 
         return visitChildren(ctx);
     }
@@ -71,13 +71,13 @@ public class ErrorVisitor extends BBaseVisitor {
     @Override public Object visitDoWhileStatement(BParser.DoWhileStatementContext ctx) { return visitChildren(ctx); }
     
     @Override public Object visitMissingLBraceDoWhileLoop(BParser.MissingLBraceDoWhileLoopContext ctx) {
-        B.addErrors("bdo-bhile loop does not have an opening brace ({) at line " + ctx.getStart().getLine());
+        B.addErrors("bdo-bhile loop does not have an opening brace { at line " + ctx.getStart().getLine());
 
         return visitChildren(ctx);
     }
     
     @Override public Object visitMissingRBraceDoWhileLoop(BParser.MissingRBraceDoWhileLoopContext ctx) {
-        B.addErrors("bdo-bhile loop does not have a closing brace (}) at line " + ctx.getStart().getLine());
+        B.addErrors("bdo-bhile loop does not have a closing brace } at line " + ctx.getStart().getLine());
 
         return visitChildren(ctx);
     }
@@ -163,4 +163,12 @@ public class ErrorVisitor extends BBaseVisitor {
     @Override public Object visitIndexes(BParser.IndexesContext ctx) { return visitChildren(ctx); }
     
     @Override public Object visitList(BParser.ListContext ctx) { return visitChildren(ctx); }
+
+    @Override public Object visitMissingSemiColonAss(BParser.MissingSemiColonAssContext ctx) {
+        B.addErrors("Missing Semicolon found in line " + ctx.getStart().getLine());
+        return visitChildren(ctx); }
+
+    @Override public Object visitMissingSemiColonLoop(BParser.MissingSemiColonLoopContext ctx) {
+        B.addErrors("Missing Semicolon on bdo bhile loop found in line " + ctx.getStart().getLine());
+        return visitChildren(ctx); }
 }

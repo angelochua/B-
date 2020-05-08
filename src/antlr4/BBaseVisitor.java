@@ -1,4 +1,4 @@
-package antlr4;// Generated from C:/Users/user/Desktop/CMPILER v2/Java Implementation/grammar\B.g4 by ANTLR 4.7.2
+package antlr4;// Generated from C:/Users/user/Desktop/CMPILER v2/B++ - Copy (2)/grammar\B.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -142,7 +142,21 @@ public class BBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements BVis
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
+	@Override public T visitMissingSemiColonAss(BParser.MissingSemiColonAssContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
 	@Override public T visitDoWhileStatement(BParser.DoWhileStatementContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitMissingSemiColonLoop(BParser.MissingSemiColonLoopContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *

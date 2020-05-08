@@ -1,4 +1,4 @@
-package antlr4;// Generated from C:/Users/user/Desktop/CMPILER v2/Java Implementation/grammar\B.g4 by ANTLR 4.7.2
+package antlr4;// Generated from C:/Users/user/Desktop/CMPILER v2/B++ - Copy (2)/grammar\B.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -187,6 +187,16 @@ public interface BListener extends ParseTreeListener {
 	 */
 	void exitMissingRBraceWhileLoop(BParser.MissingRBraceWhileLoopContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link BParser#missingSemiColonAss}.
+	 * @param ctx the parse tree
+	 */
+	void enterMissingSemiColonAss(BParser.MissingSemiColonAssContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link BParser#missingSemiColonAss}.
+	 * @param ctx the parse tree
+	 */
+	void exitMissingSemiColonAss(BParser.MissingSemiColonAssContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link BParser#doWhileStatement}.
 	 * @param ctx the parse tree
 	 */
@@ -196,6 +206,16 @@ public interface BListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDoWhileStatement(BParser.DoWhileStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link BParser#missingSemiColonLoop}.
+	 * @param ctx the parse tree
+	 */
+	void enterMissingSemiColonLoop(BParser.MissingSemiColonLoopContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link BParser#missingSemiColonLoop}.
+	 * @param ctx the parse tree
+	 */
+	void exitMissingSemiColonLoop(BParser.MissingSemiColonLoopContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link BParser#missingLBraceDoWhileLoop}.
 	 * @param ctx the parse tree
